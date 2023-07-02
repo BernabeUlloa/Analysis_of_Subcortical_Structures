@@ -7,6 +7,7 @@ We have subjects from the public HCP database[2], each with their T1 structural 
 For each subject, the aseg.nii.gz file was used to identify the voxels corresponding to each anatomical structure, generating a mask. Next, the mask was applied to extract the original intensity values from the subject's orig.nii.gz image.
 
 ![Alt text](/img/Figure_2.png)
+
 Subsequently, the intensity level of the segmented regions was calculated for each subject. We calculated the average intensity values using arithmetic mean and standard deviation. Finally, we calculated the coefficient of variation for each region using the following formula:
 $$CV = 100 * \frac{\sigma}{\mu}$$
 
@@ -14,9 +15,10 @@ $$CV = 100 * \frac{\sigma}{\mu}$$
 Next, we can observe the results of applying the mask to a specific region of the brain for a specific slice, along with their original intensities.
 
 ![Alt text](/img/Figure_3.png)
+
 From isolated regions using the one shown above, intensity calculations were performed and recorded in the following table.
 
-|Region	|103818	|105923	|111312	|Arithmetic mean of average intensity	|σ Standard deviation of average intensity	|Variation Coefficient	|% Variation Coefficient|
+| |Region	|103818	|105923	|111312	|Arithmetic mean of average intensity	|σ Standard deviation of average intensity	|Variation Coefficient	|% Variation Coefficient|
 | ---|--- |--- |--- |--- |--- |--- |--- |--- |
 |20	|Right-Cerebral-White-Matter	|199,29 |	190,19	|199,29	|196,26	|5,25	|2,68|2,68|
 |0	|Left-Cerebral-White-Matter	|198,91	|189,45	|198,91	|195,76|5,46	|2,79	|2,79|
@@ -28,4 +30,5 @@ During the code creation process, the correct functionality was initially tested
 
 ## Reference
 > [1] Surfer NMR MGH Harvard. https://surfer.nmr.mgh.harvard.edu. (accessed on 17 April 2023).
+
 > [2] Human Connectome Project Young Adult Study. “1200 Subjects Data Release”. https://www.humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release. (accessed on 17 April 2023).
